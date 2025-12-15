@@ -25,11 +25,11 @@ if [[ -n "$root_part" && -n "$boot_part" ]]; then
   rm -rf $root_mount"*"
   echo ${root_mount}"/*"
 
-  cp "${curr_path}"/poky/"${image_rel_path}"bcm2711-rpi-4-b.dtb"" "$boot_mount"
-  cp "${curr_path}"/poky/"${image_rel_path}"Image"" ${boot_mount}"kernel_rpilinux.img"
+  cp "${curr_path}""/""${image_rel_path}"bcm2711-rpi-4-b.dtb"" "$boot_mount"
+  cp "${curr_path}""/""${image_rel_path}"Image"" ${boot_mount}"kernel_rpilinux.img"
   #rm "${curr_path}"/poky/"${image_rel_path}"bootfiles/*.txt""
-  cp "${curr_path}"/poky/"${image_rel_path}"bootfiles/*"" ${boot_mount}
-  tar -xjf "${curr_path}"/poky/"${image_rel_path}"rpilinux-image-raspberrypi4-64.rootfs.tar.bz2"" -C "$root_mount"
+  cp "${curr_path}""/""${image_rel_path}"bootfiles/*"" ${boot_mount}
+  tar -xjf "${curr_path}""/""${image_rel_path}"rpilinux-image-raspberrypi4-64.rootfs.tar.bz2"" -C "$root_mount"
   #echo -e $fstab > $root_mount"/etc/fstab"
 
   #umount /media/ROOT
