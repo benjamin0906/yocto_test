@@ -6,4 +6,5 @@ IMAGE_INSTALL += "hello"
 IMAGE_INSTALL += "raspi-gpio"
 IMAGE_INSTALL += "kernel-module-spidev kernel-module-spi-bcm2835"
 IMAGE_INSTALL += "rpi-gpio"
+IMAGE_INSTALL += "i2c-tools"
 
