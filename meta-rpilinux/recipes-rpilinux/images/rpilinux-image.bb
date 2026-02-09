@@ -8,4 +8,5 @@ IMAGE_INSTALL += "kernel-module-spidev kernel-module-spi-bcm2835"
 IMAGE_INSTALL += "rpi-gpio"
 IMAGE_INSTALL += "i2c-tools"
 IMAGE_INSTALL += "adt7310-driver"
+IMAGE_INSTALL += "protobuf"
 
